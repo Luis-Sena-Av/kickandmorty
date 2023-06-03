@@ -14,6 +14,11 @@ export const useGetapi = (url) => {
             })
             .catch(err=>{console.log(err)
                 sethaserror(true)
+                setTimeout(()=>{
+                    sethaserror(false)
+                }
+                ,3000)
+                
             })
     }
 

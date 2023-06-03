@@ -67,7 +67,6 @@ header{
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-
 }
 
 .info_location h2{
@@ -79,7 +78,6 @@ header{
 .info_location ul{
   display: flex;
   gap: 2rem;
-    
 }
 .info_location ul li{
 list-style: none;
@@ -193,6 +191,11 @@ header img{
   position: absolute;
   top: 30%;
   left: 35%;
+}
+.mensajerr{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
 }
 @media(max-width:435px){
   .info_location ul{
