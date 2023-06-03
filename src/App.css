@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #05292E;
+}
+
+.form{
+  display: flex;
+  width: 250px;
+  height: 30px;
+  border-radius: 0.3rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.intro{
+  height: 100%;
+  width: 70%;
+  border: none;
+  padding: 0.3rem;
+}
+.intro:focus{
+border: none;
+outline: none;
+}
+.enviar{
+  height: 100%;
+  width: 30%;
+  background-color: #7BB924;
+  color: white;
+  border-radius: 0rem 0.3rem 0.3rem 0 ;
+  border: none;
+  cursor: pointer;
+}
+
+.rickandmorty{
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows:300px 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header{
+  background-color: red;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.carta{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 2rem;
+  background-color: #05292E;
+}
+.info_location{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#062226;
+  width: 50%;
+  min-width: 380px;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.info_location h2{
+  color: #7BB924;
+  padding: 0.4rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.info_location ul{
+  display: flex;
+  gap: 2rem;
+    
+}
+.info_location ul li{
+list-style: none;
+text-align: center;
+}
+
+.info_location ul li h4{
+  font-weight: 300;
+  color: white;
+}
+.info_location ul li span{
+  font-weight: 200;
+  color: gray;
+}
+
+.residents{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px) ;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1024px;
+  justify-content: center;
+  align-items: center;
+}
+.resident{
+  display: flex;
+  flex-direction: column;
+  background-color: #062226;
+  min-width: 250px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.residen_foto{
+  position: relative;
+}
+.residen_foto img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.residen_foto span{
+  position: absolute;
+  top: 1.4rem;
+  left: 0;
+  background-color:#062226;
+  color: white;
+  width: 40%;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1rem 0.7rem;
+}
+.residen_foto span div{
+  width: 18%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.Alive{
+  background-color: #7BB924;
+}
+.Dead{
+  background-color: red;
+}
+
+.resident h2,.resident ul{
+  padding: 0.8rem;
+  color: white;
+}
+.resident h2{
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.resident ul li{
+  padding: 0;
+  list-style: none;
+}
+
+.resident ul li span{
+  color: gray;
+}
+.resident ul li b{
+  font-weight: 200;
+}
+
+.resident ul{
+  line-height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+hr{
+  width: 90%;
+  color: white;
+}
+header{
+  background-image: url("./imagenes/rick-y-morty.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+header img{
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+@media(max-width:435px){
+  .info_location ul{
+    flex-direction: column;
+  }
+  .info_location{
+    min-width: 206px;
+  }
+}
