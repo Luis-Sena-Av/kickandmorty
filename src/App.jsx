@@ -14,17 +14,16 @@ function App() {
     getApi()
   }, [locationId])
   
-  console.log(location);
-
   return (
     <>
       <div className='rickandmorty'>
         <header>
           <img src="./imagenes/tt.png" alt="rick" />
         </header>
+        
         <div className='carta'>
           <InputId setlocationId={setlocationId}/>
-          {haserror? <h2 className='mensajerr'> ❌ Hey! you must provide an id from 1 to 126</h2>: <CartLocation location={location}/> }
+          {haserror? <h2 className='mensajerr'> ❌ Hey! you must provide an id from 1 to 126</h2>:location? <CartLocation location={location}/>:<div className='load'></div> }
         </div>
       </div>
       

@@ -73,6 +73,7 @@ header{
   color: #7BB924;
   padding: 0.4rem;
   font-family: 'Ubuntu', sans-serif;
+  text-align: center;
 }
 
 .info_location ul{
@@ -197,6 +198,27 @@ header img{
   text-align: center;
   margin-top: 2rem;
 }
+
+.load{
+  width: 120px;
+  height: 120px;
+  border: solid 1rem transparent;
+  border-radius: 50%;
+  border-right-color: white;
+  border-left-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem auto;
+  animation: rotar 2s ease-in infinite;
+}
+
+@keyframes rotar{
+  100%{
+    transform: rotate(-180deg);
+  }
+}
+
 @media(max-width:435px){
   .info_location ul{
     flex-direction: column;
