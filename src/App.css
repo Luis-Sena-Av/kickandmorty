@@ -177,7 +177,6 @@ hr{
   color: white;
 }
 header{
-  background-image: url("./imagenes/rick-y-morty.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;

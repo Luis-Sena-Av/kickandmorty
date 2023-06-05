@@ -13,11 +13,15 @@ function App() {
   useEffect(() => {
     getApi()
   }, [locationId])
+
+  const estilo={
+    backgroundImage:'url("./imagenes/rick-y-morty.jpg")' 
+  }
   
   return (
     <>
       <div className='rickandmorty'>
-        <header>
+        <header style={estilo}>
           <img src="./imagenes/tt.png" alt="rick" />
         </header>
         
