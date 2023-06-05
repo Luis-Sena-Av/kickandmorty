@@ -112,6 +112,7 @@ text-align: center;
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .residen_foto{
   position: relative;
@@ -138,6 +139,9 @@ text-align: center;
   width: 18%;
   aspect-ratio: 1;
   border-radius: 50%;
+}
+.color{
+
 }
 .Alive{
   background-color: #7BB924;

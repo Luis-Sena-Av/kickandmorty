@@ -16,7 +16,7 @@ export const CartResident = ({Urlresident}) => {
         <div className='resident'>
             <div className='residen_foto'>
                 <img src={resident?.image} alt={resident?.name} />    
-                <span><div className={`${resident?.status}`}></div>  {resident?.status}</span>
+                <span><div className={`color  ${resident?.status}`}></div>  {resident?.status}</span>
             </div>  
             <h2>{resident?.name}</h2>
             <hr/>
